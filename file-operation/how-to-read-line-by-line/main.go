@@ -14,7 +14,7 @@ func main() {
 	}
 	reader := bufio.NewReader(f)
 	for {
-		buf, _, err := reader.ReadLine()
+		buf, _, err := reader.ReadLine()  //don't read '\n'
 		if err == io.EOF {
 			break
 		}
